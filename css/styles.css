@@ -13,7 +13,7 @@ nav {
     position: fixed;
     background-color: #ad8330;
     width: 150px;
-    height: 95vh;
+    height: 100vh;
 }
 
 .logo {
@@ -37,31 +37,32 @@ ul {
 main {
     position: fixed;
     left: 150px;
-    height: 95%;
+    height: 100vh;
     overflow: auto;
+    background-color: #f9f9f9;
 }
 
 section {
-    margin: 20px;
+    margin: 30px 50px;
+    scroll-margin-top: 30px;
 }
 
 h3 {
-    margin: 25px 0;
-    font-size: 1.9em;
+    margin: 20px 0;
+    font-size: 2.5em;
 }
 
 .container-cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
-    margin: 15px 0;
+    gap: 20px;
 }
 
 .card-producto{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 300px;
+    width: 280px;
     height: 100px;
     background-color: #e8e7e3;
     border-radius: 10px;
@@ -72,13 +73,12 @@ h3 {
 .detalle-producto {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
     margin: 15px 0 15px 15px;
 }
 
 .detalle-producto p:first-of-type {
     font-weight: 600;
-    font-size: 1.1em;
 }
 
 .detalle-producto p:last-of-type {
@@ -92,6 +92,7 @@ h3 {
     height: 80px;
     border: 1px solid #ccc;
     border-radius: 10px;
+    background-color: #e5dec8;
 }
 
 hr {
@@ -101,19 +102,150 @@ hr {
 }
 
 footer {
+    display: flex;
+    justify-content: center;
     position: fixed;
     bottom: 0;
-    width: 100%;
 }
 
 .desarrollado, .desarrollado a {
+    padding: 8px 0;
     margin: 0;
-    padding: 7px 0;
-    height: 5vh;
-    font-family: sans-serif;
     color: #fff;
-    font-size: 16px;
     background-color: #333;
     text-align: center;
     text-decoration: none;
+}
+
+
+@media screen and (max-width: 830px) {
+    nav {
+        width: 140px;
+    }
+
+    main {
+        left: 140px;
+    }
+
+    section {
+        margin: 30px 40px;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    h3 {
+        text-align: center;
+    }
+    
+    .container-cards {
+        justify-content: center;
+    }
+
+    .card-producto {
+        width: 340px;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    .card-producto {
+        width: 320px;
+    }
+}
+
+
+@media screen and (max-width: 540px) {
+    nav {
+        width: 130px;
+    }
+
+    main {
+        left: 130px;
+    }
+
+    section {
+        margin: 30px;
+    }
+
+    .card-producto {
+        width: 310px;
+    }
+}
+
+
+@media screen and (max-width: 510px) {
+    nav {
+        width: 120px;
+    }
+
+    main {
+        left: 120px;
+    }
+
+    section {
+        margin: 25px;
+    }
+
+    .card-producto {
+        width: 300px;
+    }
+}
+
+
+@media screen and (max-width: 490px) {
+    h3 {
+        font-size: 2.3em;
+    }
+
+    nav {
+        width: 110px;
+    }
+
+    main {
+        left: 110px;
+    }
+
+    section {
+        margin: 20px;
+    }
+
+    .card-producto {
+        width: 290px;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    nav {
+        width: 100px;
+    }
+
+    main {
+        left: 100px;
+    }
+
+    section {
+        margin: 10px;
+    }
+
+    .card-producto {
+        width: 280px;
+    }
+}
+
+
+@media screen and (max-width: 415px) {
+    .imagen-producto {
+        display: none;
+    }
+
+    .detalle-producto p:first-of-type {
+        font-weight: 600;
+        font-size: 1.1em;
+    }
+    
+    .detalle-producto p:last-of-type {
+        font-size: 1em;
+    }
 }
