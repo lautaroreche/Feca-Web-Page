@@ -58,7 +58,7 @@ h3 {
     gap: 20px;
 }
 
-.card-producto{
+.card-producto {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -115,6 +115,16 @@ footer {
     background-color: #333;
     text-align: center;
     text-decoration: none;
+}
+
+
+i:hover {
+    color: #fff;
+}
+
+
+.card-producto:hover {
+    background-color: #e5dec8;
 }
 
 
