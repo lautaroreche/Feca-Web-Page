@@ -22,18 +22,18 @@
                 <img class="logo" src="{% static 'images/logo.png' %}" alt="Logo de Feca">
             </a>
             <ul>
-                {% for categorie in categories %}
+                {% for category in categories %}
                     <li>
-                        <a href="#{{ categorie }}" aria-label="Sección de {{ categorie }}">
-                            {% if categorie == 'Cafe' %}
+                        <a href="#{{ category }}" aria-label="Sección de {{ category }}">
+                            {% if category == 'Cafe' %}
                                 <i class="fa-solid fa-mug-saucer"></i>
-                            {% elif categorie == 'Panaderia' %}
+                            {% elif category == 'Panaderia' %}
                                 <i class="fa-solid fa-cookie"></i>
-                            {% elif categorie == 'Comida' %}
+                            {% elif category == 'Comida' %}
                                 <i class="fa-solid fa-burger"></i>
-                            {% elif categorie == 'Bebida' %}
+                            {% elif category == 'Bebida' %}
                                 <i class="fa-solid fa-glass-water"></i>
-                            {% elif categorie == 'Otro' %}
+                            {% elif category == 'Otro' %}
                                 <i class="fa-solid fa-plus"></i>
                             {% endif %}
                         </a>
@@ -43,19 +43,19 @@
         </nav>
     </header>
     <main>
-        {% for categorie in categories %}
-            <section id="{{ categorie }}">
-                <h3>{{ categorie }}</h3>
+        {% for category in categories %}
+            <section id="{{ category }}">
+                <h3>{{ category }}</h3>
                 <div class="container-cards">
                     {% for product in products %}
-                        {% if product.categorie == categorie %}
+                        {% if product.category == category %}
                             <div class="card-producto">
                                 <div class="detalle-producto">
                                     <p>{{ product.name }}</p>
                                     <p>{{ product.description }}</p>
                                 </div>
                                 <div>
-                                    <img class="imagen-producto" src="images/cafe.png" alt="Café">
+                                    <img class="imagen-producto" src="{{ product.image.url }}" alt="Café">
                                 </div>
                             </div>
                         {% endif %}
@@ -64,10 +64,6 @@
             </section>
             <hr>
         {% endfor %}
-        <hr>
-        <p class="desarrollado">
-            <a href="https://www.linkedin.com/in/lautaroreche/" target="_blank" rel="noreferrer" aria-label="Hipervínculo al perfil de LinkedIn de Lautaro Reche">Desarrollado por Lautaro Reche</a>
-        </p>
     </main>
 </body>
 </html>
