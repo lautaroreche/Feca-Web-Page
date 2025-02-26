@@ -3,10 +3,8 @@ from feca_web_page_app.models import Product
 
 
 def home(request):
-    products = Product.objects.all()
-    print(len(products))
+    products = Product.objects.all().order_by('name')
     categories = Product.objects.values_list('category', flat=True).distinct()
-
     context = {
         "products": products,
         "categories": categories,

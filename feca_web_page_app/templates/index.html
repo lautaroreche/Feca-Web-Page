@@ -51,8 +51,9 @@
                         {% if product.category == category %}
                             <div class="card-producto">
                                 <div class="detalle-producto">
-                                    <p>{{ product.name }}</p>
-                                    <p>{{ product.description }}</p>
+                                    <p class="product-name">{{ product.name }}</p>
+                                    <p class="product-description">{{ product.description }}</p>
+                                    <p class="product-price">${{ product.price|floatformat:0 }}</p>
                                 </div>
                                 <div>
                                     <img class="imagen-producto" src="{{ product.image.url }}" alt="Café">
