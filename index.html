@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="author" content="Lautaro Reche"/>
+    <meta name="robots" content="index, follow"/>
+    <meta name="referrer" content="no-referrer-when-downgrade"/>
+    <meta name="description" content="Feca Specialty Coffee: artisan espresso, fresh pastries, and a cozy atmosphere. Crafted brews for coffee lovers in the heart of the city.">
+    <title>Feca | Specialty coffee</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
+    <link preload rel="stylesheet" href="styles/style.css"/>
+    <link preload rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" onload="this.media='all'">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <header>
+        <nav class="absolute w-screen flex items-center gap-4 md:justify-between px-4 md:px-16 py-2 z-50">
+            <button id="menu-toggle" class="md:hidden text-white text-3xl">
+                <i class="fas fa-bars cursor-pointer"></i>
+            </button>
+            <a href="/">
+                <img src="images/logo.webp" alt="Feca Logo" class="w-28" />
+            </a>
+            <ul id="menu" class="hidden md:flex gap-8 items-center text-white text-xl">
+                <li class="relative group">
+                    <a href="#home-section">HOME</a>
+                    <span class="absolute left-0 -bottom-3 h-0.5 w-1/2 bg-white origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
+                </li>
+                <li class="relative group">
+                    <a href="#menu-section">MENU</a>
+                    <span class="absolute left-0 -bottom-3 h-0.5 w-1/2 bg-white origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
+                </li>
+                <li class="relative group">
+                    <a href="#craft-section">OUR CRAFT</a>
+                    <span class="absolute left-0 -bottom-3 h-0.5 w-1/2 bg-white origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
+                </li>
+                <li class="relative group">
+                    <a href="#contact-section">CONTACT</a>
+                    <span class="absolute left-0 -bottom-3 h-0.5 w-1/2 bg-white origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
+                </li>
+            </ul>
+        </nav>
+    </header>      
+    <section id="home-section" class="relative h-screen p-8 md:px-16">
+        <div class="absolute inset-0 bg-gradient-to-b from-black to-black opacity-40 z-10"></div>
+        <img src="/images/hero-background.webp" alt="" class="absolute inset-0 w-full h-full object-cover -z-10" aria-hidden="true">
+        <div class="py-60 relative z-20 text-white">
+            <hr class="w-1/4 h-0.5 bg-white border-0">
+            <p class="mt-8">HOMEMADE</p>
+            <h1 class="text-4xl md:text-7xl mb-8">FECA SPECIALTY <br> COFFEE</h1>
+            <p class="text-2xl mb-8">Brewed for connection, crafted for everyone</p>
+            <hr class="w-1/3 h-0.5 bg-white border-0">
+        </div>
+    </section>
+    <main id="menu-section" class="px-4 md:px-16 py-16 bg-zinc-100">
+        <h2 class="text-4xl mb-8">MENU</h2>
+        <hr class="w-1/4 h-0.5 bg-black border-0 mb-10">
+        <div class="flex md:justify-center flex-wrap gap-14">
+            <div class="flex flex-row items-center gap-2 md:gap-5 w-96">
+                <img src="images/products/Caffè_Americano.webp" alt="Caffè Americano" loading="lazy" class="w-28 bg-[#d0ab7a] rounded-full">
+                <p class="inline-block text-xl">Caffè Americano</p>
+            </div>
+            <div class="flex flex-row items-center gap-2 md:gap-5 w-96">
+                <img src="images/products/Caffè_Latte.webp" alt="Caffè Latte" loading="lazy" class="w-28 bg-[#d0ab7a] rounded-full">
+                <p class="inline-block text-xl">Caffè Latte</p>
+            </div>
+            <div class="flex flex-row items-center gap-2 md:gap-5 w-96">
+                <img src="images/products/Caffè_Mocha.webp" alt="Caffè Mocha" loading="lazy" class="w-28 bg-[#d0ab7a] rounded-full">
+                <p class="inline-block text-xl">Caffè Mocha</p>
+            </div>
+            <div class="flex flex-row items-center gap-2 md:gap-5 w-96">
+                <img src="images/products/Cappuccino.webp" alt="Capuccino" loading="lazy" class="w-28 bg-[#d0ab7a] rounded-full">
+                <p class="inline-block text-xl">Capuccino</p>
+            </div>
+            <div class="flex flex-row items-center gap-2 md:gap-5 w-96">
+                <img src="images/products/Espresso.webp" alt="Espresso" loading="lazy" class="w-28 bg-[#d0ab7a] rounded-full">
+                <p class="inline-block text-xl">Espresso</p>
+            </div>
+            <div class="flex flex-row items-center gap-2 md:gap-5 w-96">
+                <img src="images/products/Flat_White.webp" alt="Flat White" loading="lazy" class="w-28 bg-[#d0ab7a] rounded-full">
+                <p class="inline-block text-xl">Flat White</p>
+            </div>
+            <div class="flex flex-row items-center gap-2 md:gap-5 w-96">
+                <img src="images/products/Latte_Macchiato.webp" alt="Latte Macchiato" loading="lazy" class="w-28 bg-[#d0ab7a] rounded-full">
+                <p class="inline-block text-xl">Latte Macchiato</p>
+            </div>
+            <div class="flex flex-row items-center gap-2 md:gap-5 w-96">
+                <img src="images/products/Iced_Caffe_Latte.webp" alt="Iced Caffe Latte" loading="lazy" class="w-28 bg-[#d0ab7a] rounded-full">
+                <p class="inline-block text-xl">Iced Caffe Latte</p>
+            </div>
+            <div class="flex flex-row items-center gap-2 md:gap-5 w-96">
+                <img src="images/products/Caramel_Macchiato.webp" alt="Caramel Macchiato" loading="lazy" class="w-28 bg-[#d0ab7a] rounded-full">
+                <p class="inline-block text-xl">Caramel Macchiato</p>
+            </div>
+            <div class="flex flex-row items-center gap-2 md:gap-5 w-96">
+                <img src="images/products/Chocolate_Cream_Frappuccino.webp" alt="Chocolate Cream Frappuccino" loading="lazy" class="w-28 bg-[#d0ab7a] rounded-full">
+                <p class="inline-block text-xl">Chocolate Cream Frappuccino</p>
+            </div>
+            <div class="flex flex-row items-center gap-2 md:gap-5 w-96">
+                <img src="images/products/Cookies_and_Cream_Frappuccino.webp" alt="Cookies and Cream Frappuccino" loading="lazy" class="w-28 bg-[#d0ab7a] rounded-full">
+                <p class="inline-block text-xl">Cookies and Cream Frappuccino</p>
+            </div>
+            <div class="flex flex-row items-center gap-2 md:gap-5 w-96">
+                <img src="images/products/Strawberries_and_Cream_Frappuccino.webp" alt="Strawberries and Cream Frappuccino" loading="lazy" class="w-28 bg-[#d0ab7a] rounded-full">
+                <p class="inline-block text-xl">Strawberries and Cream Frappuccino</p>
+            </div>
+            <div class="flex flex-row items-center gap-2 md:gap-5 w-96">
+                <img src="images/products/Chocolate_Chunk_Cookie.webp" alt="Chocolate Cookie" loading="lazy" class="w-28 bg-[#d0ab7a] rounded-full">
+                <p class="inline-block text-xl">Chocolate Cookie</p>
+            </div>
+            <div class="flex flex-row items-center gap-2 md:gap-5 w-96">
+                <img src="images/products/Croissant.webp" alt="Croissant" loading="lazy" class="w-28 bg-[#d0ab7a] rounded-full">
+                <p class="inline-block text-xl">Croissant</p>
+            </div>
+            <div class="flex flex-row items-center gap-2 md:gap-5 w-96">
+                <img src="images/products/Chocolate_Twist.webp" alt="Chocolate Twist" loading="lazy" class="w-28 bg-[#d0ab7a] rounded-full">
+                <p class="inline-block text-xl">Chocolate Twist</p>
+            </div>
+            <div class="flex flex-row items-center gap-2 md:gap-5 w-96">
+                <img src="images/products/Blueberry_Muffin.webp" alt="Blueberry Muffin" loading="lazy" class="w-28 bg-[#d0ab7a] rounded-full">
+                <p class="inline-block text-xl">Blueberry Muffin</p>
+            </div>
+        </div>
+    </main>
+    <section>
+        <img src="/images/banner-1.webp" alt="Banner" class="w-screen object-cover">
+    </section>
+    <section class="px-4 md:px-16 py-16 bg-zinc-100 text-black">
+        <h2 class="text-4xl mb-8">OUR MONTHLY SPECIAL</h2>
+        <hr class="w-1/4 h-0.5 bg-black border-0 mb-10">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-center gap-4 md:gap-8">
+            <img src="images/products/Cappuccino.webp" alt="Capuccino" loading="lazy" class="flex w-40 md:w-60 bg-[#d0ab7a] rounded-full">
+            <div class="flex flex-col md:justify-center gap-6 md:gap-3 max-w-120 w-auto p-4">
+                <h3 class="inline-block text-3xl font-semibold">Capuccino</h3>
+                <div class="flex flex-col md:flex-row md:items-center gap-1 md:gap-6 bg-gray-200 px-4 py-2 rounded-2xl w-max">
+                    <div class="flex flex-row items-center gap-1">
+                        <img src="images/icons/coffee_bean.webp" alt="Coffee bean" class="w-7" loading="lazy">
+                        <p>Coffee</p>
+                    </div>
+                    <div class="flex flex-row items-center gap-1">
+                        <img src="images/icons/chocolate.webp" alt="Chocolate" class="w-7" loading="lazy">
+                        <p>Chocolate</p>
+                    </div>
+                    <div class="flex flex-row items-center gap-1">
+                        <img src="images/icons/fire.webp" alt="Fire" class="w-7" loading="lazy">
+                        <p>Medium roasted</p>
+                    </div>
+                </div>
+                <div class="space-y-1">
+                    <h4 class="text-xl font-semibold">About</h4>
+                    <p>We craft our cappuccino with precision: rich espresso, steamed milk, and a delicate foam crown. Always balanced, never rushed. Every cup is a smooth blend of bold flavor and creamy texture, made to warm your hands and your day</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <img src="/images/banner-2.webp" alt="Banner" class="w-screen object-cover">
+    </section>
+    <section id="craft-section" class="px-4 md:px-16 py-16 bg-zinc-100 text-black">
+        <h2 class="text-4xl mb-8">THE ART OF OUR CRAFT</h2>
+        <hr class="w-1/4 h-0.5 bg-black border-0 mb-10">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:text-center">
+            <div class="space-y-4 max-w-96 mx-auto">
+                <div class="w-20 h-20 md:mx-auto rounded-full bg-[#d0ab7a]"></div>
+                <h3 class="text-2xl font-semibold">Skilled Baristas</h3>
+                <p class="text-base">Every cup is crafted by trained hands passionate about coffee</p>
+            </div>
+            <div class="space-y-4 max-w-96 mx-auto">
+                <div class="w-20 h-20 md:mx-auto rounded-full bg-[#d0ab7a]"></div>
+                <h3 class="text-2xl font-semibold">Precision Equipment</h3>
+                <p class="text-base">We use top-tier machines to extract the richest flavors</p>
+            </div>
+            <div class="space-y-4 max-w-96 mx-auto">
+                <div class="w-20 h-20 md:mx-auto rounded-full bg-[#d0ab7a]"></div>
+                <h3 class="text-2xl font-semibold">Daily Rituals</h3>
+                <p class="text-base">From grind to pour, we honor every step of the brewing journey</p>
+            </div>
+        </div>
+    </section>
+    <section class="h-40">
+        <img src="/images/banner-3.webp" alt="Banner" class="w-screen h-full object-cover">
+    </section>
+    <footer id="contact-section" class="relative flex flex-col md:flex-row md:justify-around gap-14 md:gap-10 px-4 md:px-16 py-16 bg-gray-950 text-white text-left">
+        <div class="space-y-2 text-left">
+            <div>
+                <a href="/">
+                    <img src="images/logo.webp" alt="Formaggi Logo" class="w-20"/>
+                </a>
+                <h2 class="text-xl">FECA - SPECIALTY COFFEE</p>
+                <p class="text-sm">© <span id="year"></span>. All rights reserved.</p>
+            </div>
+        </div>
+        <div class="space-y-2">
+            <p class="font-bold text-xl inline-block">Meet us</p>
+            <hr class="w-1/3 h-0.5 bg-white border-0 my-3">
+            <div class="space-y-2">
+                <p>Coffee street 1, Dublin, Ireland</p>
+                <p>Coffee street 2, Cork, Ireland</p>
+                <p>Coffee street 3, Limerick, Ireland</p>
+                <p>Coffee street 4, Galway, Ireland</p>
+            </div>
+        </div>
+        <div class="space-y-2">
+            <p class="font-bold text-xl inline-block">Opening hours</p>
+            <hr class="w-1/3 h-0.5 bg-white border-0 my-3">
+            <div class="space-y-1">
+                <p>All days</p>
+                <p>From 07 to 20</p>
+                <p>In all our locations</p>
+            </div>
+        </div>
+        <div class="space-y-2">
+            <p class="font-bold text-xl inline-block">Social media</p>
+            <hr class="w-1/3 h-0.5 bg-white border-0 my-3">
+            <div class="flex gap-5 text-2xl">
+                <i class="fab fa-instagram cursor-pointer"></i>
+                <i class="fab fa-tiktok cursor-pointer"></i>
+                <i class="fab fa-youtube cursor-pointer"></i>
+            </div>
+        </div>
+        <a href="#home-section" class="absolute right-16 bottom-16">
+            <i class="fa-solid fa-angles-up text-2xl"></i>
+        </a>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const menu = document.getElementById("menu");
+    
+        menuToggle.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+            menu.classList.toggle("flex");
+            menu.classList.toggle("flex-col");
+            menu.classList.toggle("absolute");
+            menu.classList.toggle("top-25");
+            menu.classList.toggle("left-0");
+            menu.classList.toggle("w-full");
+            menu.classList.toggle("bg-black/90");
+            menu.classList.toggle("z-30");
+            menu.classList.toggle("p-5");
+            menu.classList.toggle("gap-5");
+        });
+
+        menu.querySelectorAll("a").forEach(link => {
+            link.addEventListener("click", () => {
+                if (window.innerWidth < 768) {
+                menu.classList.add("hidden");
+                menu.classList.remove("flex", "flex-col", "absolute", "top-25", "left-0", "w-full", "bg-black/90", "z-30", "p-5", "gap-5");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
