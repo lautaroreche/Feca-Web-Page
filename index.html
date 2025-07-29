@@ -12,16 +12,16 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
     <link preload rel="stylesheet" href="styles/style.css"/>
     <link preload rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" onload="this.media='all'">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://cdn.jsdelivr.net">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4" defer></script>
 </head>
 <body>
     <header>
         <nav class="absolute w-screen flex items-center gap-4 md:justify-between px-4 md:px-16 py-2 z-50">
-            <button id="menu-toggle" class="md:hidden text-white text-3xl">
+            <button id="menu-toggle" class="md:hidden text-white text-3xl" aria-label="Menu icon">
                 <i class="fas fa-bars cursor-pointer"></i>
             </button>
             <a href="/">
@@ -129,7 +129,7 @@
         </div>
     </main>
     <section>
-        <img src="/images/banner-1.webp" alt="Banner" class="w-screen object-cover">
+        <img src="/images/banner-1.webp" alt="Banner" class="w-screen object-cover" loading="lazy">
     </section>
     <section class="px-4 md:px-16 py-16 bg-zinc-100 text-black">
         <h2 class="text-4xl mb-8">OUR MONTHLY SPECIAL</h2>
@@ -160,7 +160,7 @@
         </div>
     </section>
     <section>
-        <img src="/images/banner-2.webp" alt="Banner" class="w-screen object-cover">
+        <img src="/images/banner-2.webp" alt="Banner" class="w-screen object-cover" loading="lazy">
     </section>
     <section id="craft-section" class="px-4 md:px-16 py-16 bg-zinc-100 text-black">
         <h2 class="text-4xl mb-8">THE ART OF OUR CRAFT</h2>
@@ -184,13 +184,13 @@
         </div>
     </section>
     <section class="h-40">
-        <img src="/images/banner-3.webp" alt="Banner" class="w-screen h-full object-cover">
+        <img src="/images/banner-3.webp" alt="Banner" class="w-screen h-full object-cover" loading="lazy">
     </section>
     <footer id="contact-section" class="relative flex flex-col md:flex-row md:justify-around gap-14 md:gap-10 px-4 md:px-16 py-16 bg-gray-950 text-white text-left">
         <div class="space-y-2 text-left">
             <div>
                 <a href="/">
-                    <img src="images/logo.webp" alt="Formaggi Logo" class="w-20"/>
+                    <img src="images/logo.webp" alt="Formaggi Logo" class="w-20" loading="lazy"/>
                 </a>
                 <h2 class="text-xl">FECA - SPECIALTY COFFEE</p>
                 <p class="text-sm">© <span id="year"></span>. All rights reserved.</p>
@@ -224,7 +224,7 @@
                 <i class="fab fa-youtube cursor-pointer"></i>
             </div>
         </div>
-        <a href="#home-section" class="absolute right-16 bottom-16">
+        <a href="#home-section" class="absolute right-16 bottom-16" aria-label="Back to top">
             <i class="fa-solid fa-angles-up text-2xl"></i>
         </a>
     </footer>
