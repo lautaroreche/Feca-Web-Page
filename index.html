@@ -20,14 +20,14 @@
 </head>
 <body>
     <header>
-        <nav class="absolute w-screen flex items-center gap-4 md:justify-between px-4 md:px-16 py-2 z-30">
+        <nav class="absolute w-screen flex items-center gap-4 md:justify-between px-8 md:px-16 py-2 z-30">
             <button id="menu-toggle" class="md:hidden text-white text-4xl z-40" aria-label="Menu icon">
                 <i class="fas fa-bars cursor-pointer"></i>
             </button>
             <a href="/" class="z-40">
                 <img src="images/logo.webp" alt="Feca Logo" class="w-32" />
             </a>
-            <ul id="mobile-menu" class="fixed top-0 -left-2/3 h-screen w-2/3 bg-[#ad8330] opacity-95 flex flex-col items-start px-8 pt-40 gap-10 text-white text-xl transform -translate-x-full transition-transform duration-500 z-30 md:static md:h-auto md:w-auto md:bg-transparent md:opacity-100 md:flex-row md:items-center md:px-0 md:pt-0 md:gap-10 md:translate-x-0 md:transform-none">
+            <ul id="mobile-menu" class="fixed top-0 -left-2/3 h-screen w-2/3 bg-[#ad8330] flex flex-col items-start px-8 pt-36 gap-10 text-white text-xl transform -translate-x-full transition-transform duration-500 z-30 md:static md:h-auto md:w-auto md:bg-transparent md:opacity-100 md:flex-row md:items-center md:px-0 md:pt-0 md:gap-10 md:translate-x-0 md:transform-none">
                 <li class="relative group">
                     <a href="#home-section">HOME</a>
                     <span class="absolute left-0 -bottom-3 h-0.5 w-1/2 bg-white origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
@@ -47,7 +47,7 @@
             </ul>
         </nav>
     </header>      
-    <section id="home-section" class="relative h-screen p-8 md:px-16">
+    <section id="home-section" class="relative h-screen p-8 md:p-16 scroll-fade opacity-0 translate-y-8 scale-95 transition-all duration-700 ease-out">
         <div class="absolute inset-0 bg-gradient-to-b from-black to-black opacity-40 z-10"></div>
         <img src="/images/hero-background.webp" alt="" class="absolute inset-0 w-full h-screen object-cover -z-10" aria-hidden="true">
         <div class="py-60 relative z-20 text-white">
@@ -58,10 +58,10 @@
             <hr class="w-1/3 h-0.5 bg-white border-0">
         </div>
     </section>
-    <main id="menu-section" class="px-4 md:px-16 py-16 bg-zinc-100">
-        <h2 class="text-4xl mb-8">MENU</h2>
-        <hr class="w-1/4 h-0.5 bg-black border-0 mb-10">
-        <div class="flex md:justify-center flex-wrap gap-14">
+    <main id="menu-section" class="px-8 md:px-16 py-16 bg-zinc-100">
+        <h2 class="text-4xl mb-8 scroll-fade opacity-0 translate-y-8 scale-95 transition-all duration-700 ease-out">MENU</h2>
+        <hr class="w-1/4 h-0.5 bg-black border-0 mb-10 scroll-fade opacity-0 translate-y-8 scale-95 transition-all duration-700 ease-out">
+        <div class="flex md:justify-center flex-wrap gap-14 scroll-fade opacity-0 translate-y-8 scale-95 transition-all duration-700 ease-out">
             <div class="flex flex-row items-center gap-2 md:gap-5 w-96">
                 <img src="images/products/Caffè_Americano.webp" alt="Caffè Americano" loading="lazy" class="w-28 bg-[#d0ab7a] rounded-full">
                 <p class="inline-block text-xl">Caffè Americano</p>
@@ -131,10 +131,10 @@
     <section>
         <img src="/images/banner-1.webp" alt="Banner" class="w-screen object-cover" loading="lazy">
     </section>
-    <section class="px-4 md:px-16 py-16 bg-zinc-100 text-black">
-        <h2 class="text-4xl mb-8">OUR MONTHLY SPECIAL</h2>
-        <hr class="w-1/4 h-0.5 bg-black border-0 mb-10">
-        <div class="flex flex-col md:flex-row md:items-center md:justify-center gap-2 md:gap-8">
+    <section class="px-8 md:px-16 py-16 bg-zinc-100 text-black">
+        <h2 class="text-4xl mb-8 scroll-fade opacity-0 translate-y-8 scale-95 transition-all duration-700 ease-out">OUR MONTHLY SPECIAL</h2>
+        <hr class="w-1/4 h-0.5 bg-black border-0 mb-10 scroll-fade opacity-0 translate-y-8 scale-95 transition-all duration-700 ease-out">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-center gap-2 md:gap-8 scroll-fade opacity-0 translate-y-8 scale-95 transition-all duration-700 ease-out">
             <img src="images/products/Cappuccino.webp" alt="Capuccino" loading="lazy" class="flex w-40 md:w-60 bg-[#d0ab7a] rounded-full">
             <div class="flex flex-col md:justify-center gap-6 md:gap-3 max-w-120 w-auto p-4">
                 <h3 class="inline-block text-3xl font-semibold">Capuccino</h3>
@@ -162,10 +162,10 @@
     <section>
         <img src="/images/banner-2.webp" alt="Banner" class="w-screen object-cover" loading="lazy">
     </section>
-    <section id="craft-section" class="px-4 md:px-16 py-16 bg-zinc-100 text-black">
-        <h2 class="text-4xl mb-8">THE ART OF OUR CRAFT</h2>
-        <hr class="w-1/4 h-0.5 bg-black border-0 mb-10">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:text-center">
+    <section id="craft-section" class="px-8 md:px-16 py-16 bg-zinc-100 text-black">
+        <h2 class="text-4xl mb-8 scroll-fade opacity-0 translate-y-8 scale-95 transition-all duration-700 ease-out">THE ART OF OUR CRAFT</h2>
+        <hr class="w-1/4 h-0.5 bg-black border-0 mb-10 scroll-fade opacity-0 translate-y-8 scale-95 transition-all duration-700 ease-out">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:text-center scroll-fade opacity-0 translate-y-8 scale-95 transition-all duration-700 ease-out">
             <div class="space-y-4 max-w-96 mx-auto">
                 <img src="images/icons/coffee_bean.webp" alt="Chocolate Twist" loading="lazy" class="w-16 p-3 bg-[#d0ab7a] rounded-full md:mx-auto">
                 <h3 class="text-2xl font-semibold">Skilled Baristas</h3>
@@ -186,7 +186,7 @@
     <section>
         <img src="/images/banner-3.webp" alt="Banner" class="w-screen h-40 object-cover" loading="lazy">
     </section>
-    <footer id="contact-section" class="relative flex flex-col md:flex-row md:justify-around gap-14 md:gap-10 px-4 md:px-16 py-16 bg-gray-950 text-white text-left">
+    <footer id="contact-section" class="relative flex flex-col md:flex-row md:justify-around gap-14 md:gap-10 px-8 md:px-16 py-16 bg-gray-950 text-white text-left">
         <div class="space-y-2 text-left">
             <div>
                 <a href="/">
@@ -236,11 +236,39 @@
     <script>
         const toggleButton = document.getElementById('menu-toggle');
         const mobileMenu = document.getElementById('mobile-menu');
+        let isOpen = false;
     
         toggleButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('translate-x-full');
-            mobileMenu.classList.toggle('translate-x-0');
+            isOpen = !isOpen;
+            mobileMenu.classList.toggle('translate-x-full', isOpen);
+            mobileMenu.classList.toggle('translate-x-0', !isOpen);
         });
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                isOpen = false;
+                mobileMenu.classList.remove('translate-x-full');
+            });
+        });
+        window.addEventListener('resize', () => {
+            if (window.innerWidth >= 768) {
+                isOpen = false;
+                mobileMenu.classList.remove('translate-x-full');
+            }
+        });
+    </script>
+
+    <script>
+        const scrollFadeElems = document.querySelectorAll('.scroll-fade');
+        const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.remove('opacity-0', 'translate-y-8', 'scale-95');
+                entry.target.classList.add('opacity-100', 'translate-y-0', 'scale-100');
+                observer.unobserve(entry.target);
+            }
+        });
+        }, { threshold: 0.1 });
+        scrollFadeElems.forEach(el => observer.observe(el));
     </script>
 </body>
 </html>
