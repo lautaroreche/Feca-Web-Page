@@ -8,6 +8,48 @@
     <meta name="robots" content="index, follow"/>
     <meta name="referrer" content="no-referrer-when-downgrade"/>
     <meta name="description" content="Feca Specialty Coffee: artisan espresso, fresh pastries, and a cozy atmosphere. Crafted brews for coffee lovers in the heart of the city.">
+
+    <style>
+        #loader {
+            position: fixed;
+            inset: 0;
+            background-color: #f4f4f5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+        }
+
+        .spinner {
+            width: 48px;
+            height: 48px;
+            border: 4px solid #d0ab7a;
+            border-top-color: transparent;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        body.loading main,
+        body.loading header,
+        body.loading section,
+        body.loading footer {
+            visibility: hidden;
+        }
+    </style>
+
+    <script>
+        document.documentElement.classList.add('js');
+        document.addEventListener("DOMContentLoaded", () => {
+            document.body.classList.add("loading");
+        });
+    </script>
+
     <title>Feca | Specialty coffee</title>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
     <link preload rel="stylesheet" href="styles/style.css"/>
@@ -19,6 +61,10 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4" defer></script>
 </head>
 <body>
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
     <header>
         <nav class="absolute w-screen flex items-center gap-4 md:justify-between px-8 md:px-16 py-2 z-30">
             <button id="menu-toggle" class="md:hidden text-white text-4xl z-40" aria-label="Menu icon">
@@ -269,6 +315,16 @@
         });
         }, { threshold: 0.1 });
         scrollFadeElems.forEach(el => observer.observe(el));
+    </script>
+
+    <script>
+        window.addEventListener("load", () => {
+            setTimeout(() => {
+                const loader = document.getElementById("loader");
+                if (loader) loader.style.display = "none";
+                    document.body.classList.remove("loading");
+            }, 100);
+        });
     </script>
 </body>
 </html>
