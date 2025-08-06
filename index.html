@@ -75,19 +75,19 @@
             </a>
             <ul id="mobile-menu" class="fixed top-0 -left-2/3 h-screen w-2/3 bg-[#ad8330] flex flex-col items-start px-8 pt-36 gap-10 text-white text-xl transform -translate-x-full transition-transform duration-500 z-30 md:static md:h-auto md:w-auto md:bg-transparent md:opacity-100 md:flex-row md:items-center md:px-0 md:pt-0 md:gap-10 md:translate-x-0 md:transform-none">
                 <li class="relative group">
-                    <a href="#home">HOME</a>
+                    <a href="#" onclick="scrollToSection('home'); return false;">HOME</a>
                     <span class="absolute left-0 -bottom-3 h-0.5 w-1/2 bg-white origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
                 </li>
                 <li class="relative group">
-                    <a href="#menu">MENU</a>
+                    <a href="#" onclick="scrollToSection('menu'); return false;">MENU</a>
                     <span class="absolute left-0 -bottom-3 h-0.5 w-1/2 bg-white origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
                 </li>
                 <li class="relative group">
-                    <a href="#craft">OUR CRAFT</a>
+                    <a href="#" onclick="scrollToSection('craft'); return false;">OUR CRAFT</a>
                     <span class="absolute left-0 -bottom-3 h-0.5 w-1/2 bg-white origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
                 </li>
                 <li class="relative group">
-                    <a href="#contact">CONTACT</a>
+                    <a href="#" onclick="scrollToSection('contact'); return false;">CONTACT</a>
                     <span class="absolute left-0 -bottom-3 h-0.5 w-1/2 bg-white origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
                 </li>
             </ul>
@@ -270,9 +270,9 @@
                 <i class="fab fa-youtube cursor-pointer"></i>
             </div>
         </div>
-        <a href="#home" class="absolute right-16 bottom-16" aria-label="Back to top">
+        <a href="#" onclick="scrollToSection('home'); return false;" class="absolute right-16 bottom-16" aria-label="Back to top">
             <i class="fa-solid fa-angles-up text-2xl"></i>
-        </a>
+        </a>        
     </footer>
 
     <script>
@@ -325,6 +325,16 @@
                     document.body.classList.remove("loading");
             }, 100);
         });
+    </script>
+
+    <script>
+        function scrollToSection(id) {
+            const target = document.getElementById(id);
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth' });
+                history.replaceState(null, '', location.pathname);
+            }
+        }
     </script>
 </body>
 </html>
