@@ -4,7 +4,7 @@
     "tailwindcss": "^4.1.11"
   },
   "scripts": {
-    "build:css": "npx tailwindcss -i ./styles/input.css -o ./styles/output.css --minify",
-    "watch:css": "npx tailwindcss -i ./styles/input.css -o ./styles/output.css --watch"
+    "build:css": "npx tailwindcss -i ./css/input.css -o ./css/output.css --minify",
+    "watch:css": "npx tailwindcss -i ./css/input.css -o ./css/output.css --watch"
   }
 }
