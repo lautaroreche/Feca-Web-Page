@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 html { scroll-behavior: smooth; }
 body {
     font-family: "Plus Jakarta Sans", sans-serif;
@@ -9,6 +10,7 @@ body {
 }
 a { text-decoration: none; }
 ul { list-style: none; }
+
 
 @font-face {
     font-family: 'Font Awesome 6 Solid';
